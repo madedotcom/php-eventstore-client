@@ -52,4 +52,20 @@ final class Entry
     {
         return $this->json['links'];
     }
+
+    /**
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->json['eventId'];
+    }
+
+    /**
+     * @return string
+     */
+    public function getData()
+    {
+        return $this->json['data'];
+    }
 }
