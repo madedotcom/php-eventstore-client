@@ -49,7 +49,7 @@ final class EventStore implements EventStoreInterface
      */
     public function __construct($url)
     {
-        $this->url = $url;
+        $this->url = rtrim($url, '/');
 
         $this->httpClient = new Client();
         $this->checkConnection();
